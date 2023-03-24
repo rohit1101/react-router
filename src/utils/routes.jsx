@@ -8,22 +8,22 @@ import Profile from "../pages/Profile/Profile";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: Home,
+    element: <Home />,
   },
   {
     path: "/posts",
-    element: Posts,
+    element: <Posts />,
   },
   {
     path: "/gallery",
-    element: Gallery,
+    element: <Gallery />,
   },
   {
     path: "/todo",
-    element: Todo,
+    element: <Todo />,
   },
   {
-    path: "/profile",
-    element: Profile,
+    path: "/profile/:id",
+    element: <Profile />,
   },
 ]);
