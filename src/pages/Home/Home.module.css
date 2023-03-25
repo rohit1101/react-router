@@ -1,0 +1,50 @@
+.home {
+  display: flex;
+  height: 80vh;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.home__wrapper {
+  height: 50vh;
+  border-radius: 16px;
+}
+
+.home__title {
+  background-color: rgba(228, 228, 228, 0.5);
+  padding: 8px;
+  text-align: center;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.home__content {
+  display: flex;
+  height: 420px;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 8px 32px;
+}
+
+.home__content-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom-width: 1px;
+  border-bottom-color: #bababa;
+  border-bottom-style: solid;
+  text-decoration: none;
+  color: black;
+  padding-block: 8px;
+}
+
+.home__content-list:last-child {
+  border-bottom-width: 0px;
+}
+
+.home__profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
