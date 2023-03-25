@@ -1,16 +1,16 @@
 import React from "react";
 import { useLocation } from "react-router";
-import { Link } from "react-router-dom";
+import { Map, Marker } from "pigeon-maps";
 import Layout from "../../components/Layout/Layout";
 import styles from "./Profile.module.css";
 
 function Profile() {
   let { state } = useLocation();
-  console.log(state);
+
   return (
     <Layout>
       <div className={styles["profile__header"]}>
-        <div className="header">
+        <div className={styles["header"]}>
           <h2>Profile</h2>
         </div>
         <div className={styles["profile__content-list"]}>
@@ -19,7 +19,7 @@ function Profile() {
             src={state.profilepicture}
             alt="profile-pic"
           />
-          <h3>{state.name}</h3>
+          <h3 className={styles["header"]}>{state.name}</h3>
         </div>
       </div>
       <div className={styles["profile__content"]}>
@@ -29,7 +29,7 @@ function Profile() {
             src={state.profilepicture}
             alt="profilepic"
           />
-          <h2>{state.name}</h2>
+          <h2 style={{ color: "#5d5d5d" }}>{state.name}</h2>
           <table id="customers">
             <tbody>
               <tr>
@@ -51,7 +51,7 @@ function Profile() {
             </tbody>
           </table>
           <hr />
-          <h2 className={styles["flex-content"]}>Company</h2>
+          <h2 style={{ color: "#5d5d5d" }}>Company</h2>
           <table>
             <tbody>
               <tr>
@@ -70,8 +70,8 @@ function Profile() {
           </table>
         </div>
         <div className={styles["profile__content-right"]}>
-          <p>Address: </p>
-          <table>
+          <p style={{ color: "#BABABA" }}>Address: </p>
+          <table style={{ paddingBottom: "20px" }}>
             <tbody>
               <tr>
                 <td>Street : </td>
@@ -91,6 +91,15 @@ function Profile() {
               </tr>
             </tbody>
           </table>
+
+          <Map
+            height={400}
+            defaultCenter={[12.92739, 77.58929]}
+            defaultZoom={11}
+            borderRadius={20}
+          >
+            <Marker width={50} anchor={[12.92739, 77.58929]} />
+          </Map>
         </div>
       </div>
     </Layout>

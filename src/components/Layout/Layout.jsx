@@ -6,10 +6,10 @@ function Layout({ children }) {
     <div className={styles["layout"]}>
       <div className={styles["layout__left"]}>
         <ul>
-          <li>Profile</li>
-          <li>Posts</li>
-          <li>Gallery</li>
-          <li>ToDo</li>
+          <li className={styles["list-style"]}>Profile</li>
+          <li className={styles["list-style"]}>Posts</li>
+          <li className={styles["list-style"]}>Gallery</li>
+          <li className={styles["list-style"]}>ToDo</li>
         </ul>
       </div>
       <div className={styles["layout__right"]}>{children}</div>

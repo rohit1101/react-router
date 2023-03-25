@@ -36,6 +36,7 @@
   border-bottom-style: solid;
   text-decoration: none;
   color: black;
+  padding-block: 8px;
 }
 
 .home__content-list:last-child {

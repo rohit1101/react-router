@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16px;
+  padding-block: 16px;
   border-bottom-width: 1px;
   border-bottom-color: #bababa;
   border-bottom-style: solid;
+}
+
+.header {
+  color: #bababa;
 }
 
 .profile__user-profile {
@@ -30,11 +34,10 @@
 .profile__content-left {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%;
+  flex-basis: 40%;
   border-right-width: 1px;
   border-right-color: #bababa;
   border-right-style: solid;
-  padding-right: 42px;
   align-items: center;
 }
 
@@ -56,10 +59,22 @@ hr {
 }
 
 .profile__content-right {
-  flex-basis: 70%;
+  flex-basis: 60%;
   padding-left: 40px;
 }
 
 table tbody tr td:first-child {
   text-align: right;
+  color: #bababa;
+}
+
+table tbody tr td:nth-child(2) {
+  overflow-x: hidden;
+  font-weight: 600;
+  font-size: 20px;
+  color: #5d5d5d;
+}
+
+.map-container {
+  padding-top: 20px;
 }

@@ -40,3 +40,7 @@
   width: 100%;
   padding-left: 52px;
 }
+
+.list-style {
+  color: rgba(255, 255, 255, 0.5);
+}
