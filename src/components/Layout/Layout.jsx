@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 
 function Layout({ children }) {
@@ -7,9 +8,15 @@ function Layout({ children }) {
       <div className={styles["layout__left"]}>
         <ul>
           <li className={styles["list-style"]}>Profile</li>
-          <li className={styles["list-style"]}>Posts</li>
-          <li className={styles["list-style"]}>Gallery</li>
-          <li className={styles["list-style"]}>ToDo</li>
+          <li className={styles["list-style"]}>
+            <Link to="/posts">Posts</Link>
+          </li>
+          <li className={styles["list-style"]}>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li className={styles["list-style"]}>
+            <Link to="/todo">ToDo</Link>
+          </li>
         </ul>
       </div>
       <div className={styles["layout__right"]}>{children}</div>

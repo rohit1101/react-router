@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../../components/Layout/Layout";
 
 function Todo() {
-  return <div>Coming Soon</div>;
+  return <Layout>Coming soon</Layout>;
 }
 
 export default Todo;
